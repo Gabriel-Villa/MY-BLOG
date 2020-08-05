@@ -1,0 +1,640 @@
+@import url('https://fonts.googleapis.com/css2?family=Khula:wght@300&family=Lora:ital@1&family=Merriweather:wght@300&family=Open+Sans&display=swap');
+
+:root{
+    --letra-titulo: 'Open Sans', sans-serif;
+    --letra-subtitulo: 'Lora', serif;
+    --letra-paraffago: 'Khula', sans-serif;
+    --letra-extra: 'Merriweather', serif;
+    --color-parrafo: #868e96;
+    --color-blanco: #fff;
+    --color-negro: #000;
+    --color-plomo-oscuro: #3a3a3a;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    border: none;
+    outline: none;
+    box-sizing: border-box;
+}
+  
+html {
+    box-sizing: border-box;
+}
+  
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+  
+body {
+    overflow-x: hidden;
+    /*background-color: #f2f2f2;*/
+}
+
+
+/*---------------------------------------- INDEX PAGE ----------------------------------------*/
+
+/*---------- TRENDING POST ----------*/
+
+section.trending-container{
+    width: 100%;
+    margin-top: 40px;
+}
+
+section.trending-container h3{
+    font-family: var(--letra-titulo);
+    color: var(--color-negro);
+    text-align: center;
+    font-size: 50px;
+    letter-spacing: 3px;
+    padding-bottom: 25px;
+}
+
+section.trending-container .trending-posts{
+    display: flex;
+    flex-flow: wrap;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #f2f2f2;
+    padding: 50px;
+}
+section.trending-container .trending-posts .post{
+    background: var(--color-blanco);
+    padding: 30px;
+    width: 30%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,.2);
+    border: 1px solid #f1f1f1;
+}
+
+
+section.trending-container .trending-posts .post img{
+    width: 100%;
+}
+
+section.trending-container .trending-posts .post h6{
+    font-family: var(--letra-titulo);
+    font-size: 18px;
+    margin: 10px 0px;
+    color : var(--color-negro);
+}
+
+section.trending-container .trending-posts .post p{
+    font-family: var(--letra-paraffago);
+    font-size: 12px;
+    color: var(--color-parrafo);
+}
+
+
+/*------------------- MAIN -----------------*/
+main{
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+main .main-container{
+    width: 90%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 75% 23%;
+}
+
+
+/*------ SECTION RECENT POSTS -----*/
+main .main-container section{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+main .main-container section h1{
+    font-size: 20px;
+    color: var(--color-negro);
+    margin: 20px 0px;
+    letter-spacing: 3px;
+    font-family: var(--letra-extra);
+}
+
+main .main-container section .recent-post{
+    width:80%;
+    background: var(--color-blanco);
+    padding: 30px 40px;
+    margin: 10px 0px;
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,.2);
+    border: 1px solid #f1f1f1;
+}
+
+main .main-container section .recent-post img{
+    width:100%;
+}
+
+main .main-container section .recent-post h6{
+    font-size: 18px;
+    font-family: var(--letra-titulo);
+    color: var(--color-negro);
+    margin: 8px 0px;
+}
+
+main .main-container section .recent-post p{
+    font-size: 12px;
+    font-family: var(--letra-paraffago);
+    color: var(--color-parrafo);
+    margin: 8px 0px;
+}
+
+main .main-container section .recent-post a{
+    color: var(--color-plomo-oscuro);
+    font-family: var(--letra-extra);
+    margin: 5px 0px;
+    display: inline-block;
+    font-weight: 400;
+    padding: 18px 15px;
+    border: 1px solid #b1b1b1;
+    font-size: 10px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    background: #fff;
+    text-align: center;
+}
+
+main .main-container section .recent-post a:hover{
+    transition: 0.2s ease-in-out;
+    background: var(--color-plomo-oscuro);
+    color: var(--color-blanco);
+}
+
+
+
+/*------------------- ASIDE -----------------*/
+main .main-container aside{
+    margin-top: 20px;    
+}
+
+/*------ SECTION RECENT SEARCH -----*/
+main .main-container aside .search{
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,.2);
+    border: 1px solid #f1f1f1;
+    background: white;
+}
+
+main .main-container aside .search h1{
+    font-size: 18px;
+    margin-left: 20px;
+    font-family: var(--letra-titulo);
+    letter-spacing: 2px;
+    padding: 10px 0px;
+}
+
+main .main-container aside .search .input-search{
+    width: 100%;
+    padding-left: 20px;
+}    
+
+main .main-container aside .search input[type="text"]{
+    border: 1px solid #b1b1b1;
+    padding: 5px 2px;
+    width: 80%;
+    margin: 20px 0px;
+}
+
+main .main-container aside .search input[type="text"]:focus{
+    border: 2px solid  #3a3a3a;
+}
+main .main-container aside .search .input-search i{
+    cursor: pointer;
+}
+
+
+/*------ SECTION RECENT TOPICS -----*/
+main .main-container aside .topics{
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,.2);
+    border: 1px solid #f1f1f1;
+    margin: 20px 0px;
+    background: white;
+}
+
+main .main-container aside .topics h1{
+    font-size: 18px;
+    margin-left: 20px;
+    font-family: var(--letra-titulo);
+    letter-spacing: 2px;
+    padding: 10px 0px;
+}
+
+
+main .main-container aside .topics hr{
+    width: 80%;
+    margin-left: 20px;
+    height: 1.5px;
+    background: #E2E1E1;
+}
+
+main .main-container aside .topics a{
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: var(--letra-subtitulo);
+    padding: 15px 0px;
+    display: block;
+    border-bottom: 1px solid #E2E1E1;
+    color: var(--color-parrafo);
+    font-weight: 800;
+}
+
+main .main-container aside .topics a:hover{
+    color: var(--color-negro);
+    transition: 0.7s ease;
+    font-size: 18px;
+}
+
+
+
+/*---------------------------------------- LOGIN PAGE ----------------------------------------*/
+.container-login{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    height: 91.7vh;
+    background: #8e9eab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #83a4d4, #fff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #83a4d4, #fff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container-login form{
+    display: flex;
+    flex-flow: column;
+    border: 1px solid #f1f1f1;
+    background: white;
+    padding: 100px;
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.container-login form h1{
+    font-family: var(--letra-titulo);
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+.container-login form input[type="text"],
+.container-login form input[type="password"]{
+    font-weight: bold;
+    margin: 10px 0px;
+    height: 35px;
+    padding: 26px 45px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: #F6F7F9;
+    color: #748194;
+    font-size: 14px;
+}
+
+.container-login form input[type="text"]:focus,
+.container-login form input[type="password"]:focus{
+    border: 1px solid black;
+}
+
+.container-login form a{
+    color: var(--color-negro);
+    font-family: var(--letra-paraffago);
+}
+
+.container-login form a:hover{
+    color: #54b6ff;
+    font-family: var(--letra-paraffago);
+}
+
+
+.container-login form input[type="submit"]{
+    font-weight: bold;
+    height: 45px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: #EE9BA3;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.container-login form input[type="submit"]:hover{
+    background: #CA7F86;
+}
+
+/*---------------------------------------- REGISTER PAGE ----------------------------------------*/
+.container-register{
+    display: flex;
+    align-items:center;
+    justify-content:center;
+    height: 91.7vh;
+    background: #8e9eab; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #83a4d4, #fff); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #83a4d4, #fff); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.container-register form{
+    display: flex;
+    flex-flow: column;
+    border: 1px solid #f1f1f1;
+    background: white;
+    padding: 75px 100px;
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,.2);
+}
+
+.container-register form h1{
+    font-family: var(--letra-titulo);
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+
+.container-register form input[type="text"],
+.container-register form input[type="email"],
+.container-register form input[type="password"]{
+    font-weight: bold;
+    margin: 10px 0px;
+    height: 35px;
+    padding: 26px 45px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: #F6F7F9;
+    color: #748194;
+    font-size: 14px;
+}
+
+.container-register form input[type="text"]:focus,
+.container-register form input[type="email"]:focus,
+.container-register form input[type="password"]:focus{
+    border: 1px solid black;
+}
+
+.container-register form a{
+    color: var(--color-negro);
+    font-family: var(--letra-paraffago);
+}
+
+.container-register form a:hover{
+    color: #54b6ff;
+    font-family: var(--letra-paraffago);
+}
+
+
+
+.container-register form input[type="submit"]{
+    font-weight: bold;
+    height: 45px;
+    text-align: center;
+    margin-top: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: none;
+    background: #EE9BA3;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.container-register form input[type="submit"]:hover{
+    background: #CA7F86;
+}
+
+/*---------------------------------------- SINGLE PAGE ----------------------------------------*/
+.single{
+    background-color: #f2f2f2;
+    width: 100%;
+}
+
+.single .single-container{
+    width: 90%;
+    margin: 0px auto;
+    display: grid;
+    grid-template-columns: 75% 23%;
+}
+
+/*------ SECTION SINGLE  -----*/
+.single .single-container section{
+    display: flex;
+    flex-flow: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.single .single-container section h1{
+    font-size: 20px;
+    color: var(--color-negro);
+    margin: 20px 0px;
+    letter-spacing: 3px;
+    font-family: var(--letra-extra);
+}
+
+.single .single-container section .single-post{
+    width:80%;
+    background: var(--color-blanco);
+    padding: 30px 40px;
+    margin: 10px 0px;
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,.2);
+    border: 1px solid #f1f1f1;
+}
+
+.single .single-container section .single-post img{
+    width:100%;
+}
+
+.single .single-container section .single-post h6{
+    font-size: 18px;
+    font-family: var(--letra-titulo);
+    color: var(--color-negro);
+    margin: 8px 0px;
+}
+
+.single .single-container section .single-post p{
+    font-size: 12px;
+    font-family: var(--letra-paraffago);
+    color: var(--color-parrafo);
+    margin: 8px 0px;
+}
+
+/*------ ASIDE SINGLE  -----*/
+.single .single-container .aside-single{
+    margin-top: 20px; 
+}
+
+
+.single .single-container .aside-single .popular{
+    box-shadow: 2px 2px 4px 0 rgba(0,0,0,.2);
+    border: 1px solid #f1f1f1;
+    margin: 20px 0px;
+    background: white;
+}
+
+.single .single-container .aside-single .popular h1{
+    font-size: 18px;
+    margin-left: 20px;
+    font-family: var(--letra-titulo);
+    letter-spacing: 2px;
+    padding: 10px 0px;
+}
+
+.single .single-container .aside-single .popular hr{
+    width: 80%;
+    margin-left: 20px;
+    height: 1.5px;
+    background: #E2E1E1;
+}
+
+
+.single .single-container .aside-single .popular a{
+    display: grid;
+    grid-template-columns: 30% auto;
+    font-size: 14px;
+    margin-left: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: var(--letra-subtitulo);
+    padding: 15px 0px;
+    border-bottom: 1px solid #E2E1E1;
+    color: var(--color-parrafo);
+    font-weight: 800;
+}
+
+.single .single-container .aside-single .popular a h5{
+    padding: 10px;
+}
+
+
+.single .single-container .aside-single .popular a:hover{
+    color: var(--color-negro);
+    transition: 0.7s ease;
+    font-size: 15px;
+}
+
+
+/*---------------------------- ERRORS -------------------------------*/
+.errors{
+    font-family: var(--letra-subtitulo);
+    background: #CA7F86;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    border: 2px solid #9C565D;
+}
+
+.success{
+    font-family: var(--letra-subtitulo);
+    background: #7EF9C6;
+    border-radius: 5px;
+    padding: 5px;
+    color: white;
+    border: 2px solid #40AF81;
+}
+
+/*---------------------------------------- ALL PAGES ----------------------------------------*/
+
+/*---------- HEADER ----------*/
+
+header.nav-top{
+    width: 100%;
+    background: black;
+    position: sticky;
+    top: 0;
+}
+
+ul.nav-content{
+    width: 90%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+ul.nav-content li{
+    text-align: center;
+    padding: 20px 20px;
+    color: var(--color-blanco);
+    font-family: var(--letra-extra);
+    letter-spacing: 3px;
+    font-size: 12px;
+    position: static;
+    z-index: 999;
+    cursor: pointer;
+}
+ul.nav-content li:hover ul.submenu {
+    display: block;
+}
+
+ul.submenu{
+    display: none;
+    position: absolute;
+    background: black;
+    padding: 0px 3px;
+}
+
+
+ul.nav-content li a:hover{
+    color: var(--color-plomo-oscuro);
+}
+
+ul.nav-content li a{
+    color: var(--color-blanco);
+}
+
+/*---------- FOOTER  ----------*/
+footer{
+    width: 100%;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    background: var(--color-negro);
+}
+
+footer p{
+    color: var(--color-parrafo);
+    padding: 10px 0px;
+    font-size: 14px;
+    font-family: var(--letra-paraffago);
+    letter-spacing: 2px;
+}
+
+
+
+
+
+/*---------- MEDIA QUERIS ----------*/
+
+@media screen and (max-width: 600px) {
+
+    section.trending-container .trending-posts { 
+      display: block;
+    }
+
+    section.trending-container .trending-posts .post {
+        width: 100%;
+        margin: 10px 0px;
+    }
+
+    main .main-container{
+        width:100%;
+        display: block;
+
+    }
+
+    main .main-container section .recent-post {
+        width: 100%;
+    }
+
+}
